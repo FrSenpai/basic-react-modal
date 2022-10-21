@@ -13,11 +13,11 @@ const App = () => {
     </>
   )
   return (
-    <div>
+    <section>
       <h1>Basic react modal</h1>
       <button onClick={() => setShowModal(!showModal)}>Open the modal</button>
-      <CustomModal show={showModal} children={contentModal} close={() => setShowModal(!showModal)}  />
-    </div>
+      <CustomModal show={showModal} children={contentModal} close={() => setShowModal(!showModal)} contentContainerStyle={{backgroundColor:"gray"}}  />
+    </section>
   )
 }
 

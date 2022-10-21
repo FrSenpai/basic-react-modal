@@ -28,22 +28,22 @@ App = () => {
     </>
   )
   return (
-    <div>
+    <section>
       <h1>Basic react modal</h1>
       <button onClick={() => setShowModal(!showModal)}>Open the modal</button>
-      <CustomModal show={showModal} children={contentModal} close={() => setShowModal(!showModal)}  />
-    </div>
+      <CustomModal show={showModal} children={contentModal} close={() => setShowModal(!showModal)} contentContainerStyle={{backgroundColor:"gray"}}  />
+    </section>
   )
 }
 ```
 
-## Typescript support
-
-Step 1 --> create a new file in the root folder called "typings.d.ts" by example
-Step 2 --> add to it : declare module "basic-react-modal"
-Step 3 --> Go to tsconfig.json and add into "includes" the name of your file (typings.d.ts by example)
-Step 4 --> No more "any" errors 
-
+## Typescript support ("any" error when importing the library)
+```js
+// Step 1 --> create a new file in the root folder called "typings.d.ts" by example
+// Step 2 --> add to it : declare module "basic-react-modal"
+// Step 3 --> Go to tsconfig.json and add into "includes" section, the name of your file (typings.d.ts by example)
+// Step 4 --> No more "any" error
+```
 ## License
 
 MIT © [FrSenpai](https://github.com/FrSenpai)
