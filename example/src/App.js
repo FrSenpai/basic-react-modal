@@ -1,24 +1,9 @@
-# basic-react-modal
+import React from 'react'
 
-> A simple and easy to use modal
-
-[![NPM](https://img.shields.io/npm/v/basic-react-modal.svg)](https://www.npmjs.com/package/basic-react-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## Install
-
-```bash
-npm install --save basic-react-modal
-```
-
-## Usage
-
-```jsx
-import React, { Component } from 'react'
-
-import {CustomModal} from 'basic-react-modal'
+import { CustomModal } from 'basic-react-modal'
 import 'basic-react-modal/dist/index.css'
 
-App = () => {
+const App = () => {
   const [showModal, setShowModal] = React.useState(false)
   const contentModal = (
     <>
@@ -35,8 +20,5 @@ App = () => {
     </div>
   )
 }
-```
 
-## License
-
-MIT © [FrSenpai](https://github.com/FrSenpai)
+export default App
