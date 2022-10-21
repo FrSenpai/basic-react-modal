@@ -37,6 +37,13 @@ App = () => {
 }
 ```
 
+## Typescript support
+
+Step 1 --> create a new file in the root folder called "typings.d.ts" by example
+Step 2 --> add to it : declare module "basic-react-modal"
+Step 3 --> Go to tsconfig.json and add into "includes" the name of your file (typings.d.ts by example)
+Step 4 --> No more "any" errors 
+
 ## License
 
 MIT © [FrSenpai](https://github.com/FrSenpai)
